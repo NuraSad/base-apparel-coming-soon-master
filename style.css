@@ -18,24 +18,25 @@ body {
   background-image: url("images/bg-pattern-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 58%;
+  width: 58vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 8vh 10vw;
+  padding: 8vh 11.5vw;
 }
 
 #logo {
-  margin-bottom: 15vh;
+  margin-bottom: 17vh;
 }
 
 h1 {
   color: hsl(0, 6%, 24%);
   font-weight: 400;
-  font-size: 4.3rem;
+  font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
 h1:first-of-type {
@@ -43,37 +44,42 @@ h1:first-of-type {
   font-weight: 300;
 }
 
+h1:last-of-type {
+  margin-bottom: 0;
+}
+
 p {
   color: hsl(0, 36%, 70%);
   font-weight: 400;
-  width: 80%;
+  width: 85%;
   font-size: 1rem;
-  line-height: 2;
-  margin: 1rem 0;
+  line-height: 1.7;
+  margin: 1.2rem 0;
 }
 
-/* p {
-    color:hsl(0, 93%, 68%)
-} */
-
 img {
-  width: 42%;
+  width: 42vw;
   height: 100%;
 }
 
 label {
   position: relative;
-  margin-top: 1rem;
-  width: 85%;
+  height: 3.563rem;
+  margin-top: 1.5rem;
+  width: 90%;
 }
 
 input {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 6%, 24%);
   border: 1px solid rgba(206, 151, 151, 0.5);
+  height: 3.563rem;
   border-radius: 40px;
   font-size: 1rem;
   text-align: left;
-  padding: 1rem 1.5rem;
-  width: 80%;
+  padding: 0 1.5rem;
+  width: 90%;
 }
 
 input::placeholder {
@@ -83,15 +89,40 @@ input::placeholder {
   color: hsl(0, 36%, 70%);
 }
 
+input[type="email"]:focus {
+  outline: none;
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
 button {
-  width: 6.5vw;
-  height: 3.25rem;
+  width: 6.25rem;
+  height: 3.563rem;
   border: none;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 40px;
   position: absolute;
-  left: 75%;
+  left: 77%;
   box-shadow: 0px 8px 10px 3px rgba(206, 151, 151, 0.3);
+}
+
+#error-icon {
+  position: absolute;
+  left: 68%;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.error {
+  color: hsl(0, 93%, 68%);
+}
+.message {
+  font-size: 0.8rem;
+  margin: 0.5rem 1.5rem;
+}
+
+p.error.message {
+  visibility: hidden;
 }
 
 button:hover {
