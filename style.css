@@ -127,4 +127,10 @@ p.error.message {
 
 button:hover {
   cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 229, 229, 1) 0%,
+    rgba(237, 183, 183, 1) 100%
+  );
+  box-shadow: 0px 10px 8px 4px rgba(206, 151, 151, 0.5);
 }
