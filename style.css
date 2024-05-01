@@ -57,9 +57,13 @@ p {
   margin: 1.2rem 0;
 }
 
-img {
+img.desktop {
   width: 42vw;
   height: 100%;
+}
+
+img.mobile {
+  display: none;
 }
 
 label {
@@ -80,6 +84,7 @@ input {
   text-align: left;
   padding: 0 1.5rem;
   width: 90%;
+  background: none;
 }
 
 input::placeholder {
@@ -133,4 +138,78 @@ button:hover {
     rgba(237, 183, 183, 1) 100%
   );
   box-shadow: 0px 10px 8px 4px rgba(206, 151, 151, 0.5);
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    overflow-y: scroll;
+  }
+  .main {
+    width: 100%;
+    padding: 0;
+    background-image: none;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    /* justify-content: center; */
+    align-items: center;
+  }
+  #logo {
+    margin: 1.8rem 50% 1.8rem 0;
+    transform: scale(0.7);
+    display: block;
+  }
+  img.desktop {
+    display: none;
+  }
+  img.mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  p {
+    box-sizing: border-box;
+    width: 85%;
+    font-size: 0.9rem;
+    margin: 1.5rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  label {
+    box-sizing: border-box;
+    margin: 0.5rem 2rem;
+    width: 90%;
+    height: 2.875rem;
+  }
+
+  input {
+    height: 2.875rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  button {
+    height: 2.875rem;
+    width: 4rem;
+    right: 0;
+    left: 81%;
+  }
+
+  #error-icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  p.message {
+    text-align: left;
+  }
 }
