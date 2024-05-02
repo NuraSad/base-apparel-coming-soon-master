@@ -9,7 +9,7 @@ html {
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
 }
@@ -28,6 +28,8 @@ body {
 
 #logo {
   margin-bottom: 17vh;
+  width: 10rem;
+  height: 2rem;
 }
 
 h1 {
@@ -83,7 +85,7 @@ input {
   font-size: 1rem;
   text-align: left;
   padding: 0 1.5rem;
-  width: 90%;
+  width: 100%;
   background: none;
 }
 
@@ -106,7 +108,8 @@ button {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 40px;
   position: absolute;
-  left: 77%;
+  left: 100%;
+  transform: translateX(-100%);
   box-shadow: 0px 8px 10px 3px rgba(206, 151, 151, 0.3);
 }
 
@@ -141,9 +144,6 @@ button:hover {
 }
 
 @media only screen and (max-width: 750px) {
-  body {
-    overflow-y: scroll;
-  }
   .main {
     width: 100%;
     padding: 0;
@@ -154,8 +154,8 @@ button:hover {
   }
   #logo {
     margin: 1.8rem 50% 1.8rem 0;
-    transform: scale(0.7);
-    display: block;
+    height: 1.5rem;
+    width: 6.5rem;
   }
   img.desktop {
     display: none;
@@ -168,28 +168,28 @@ button:hover {
   h1 {
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 
   p {
     box-sizing: border-box;
     width: 85%;
     font-size: 0.9rem;
-    margin: 1.5rem 2rem;
+    margin: 1rem 2rem;
     text-align: center;
     line-height: 1.5;
   }
 
   label {
     box-sizing: border-box;
-    margin: 0.5rem 2rem;
-    width: 90%;
-    height: 2.875rem;
+    margin: 1.1rem 2rem;
+    width: 83%;
+    height: 3rem;
   }
 
   input {
-    height: 2.875rem;
+    height: 3rem;
     padding: 0.5rem 0 0.5rem 1.5rem;
-    width: 100%;
     font-size: 0.9rem;
   }
 
@@ -198,10 +198,8 @@ button:hover {
   }
 
   button {
-    height: 2.875rem;
+    height: 3rem;
     width: 4rem;
-    right: 0;
-    left: 81%;
   }
 
   #error-icon {
