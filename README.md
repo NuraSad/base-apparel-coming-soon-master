@@ -32,16 +32,16 @@ Users should be able to:
 
 ### Screenshots
 
--Desktop view:
+Desktop view:
 ![Desktop layout](screenshot-desktop.png)
--Mobile view:
+Mobile view:
 ![Mobile layout](screenshot-mobile.png)
--Incorrect email input:
+Incorrect email input:
 ![Error message](screenshot-error.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -68,9 +68,7 @@ During working on this project I learned several things:
 
 ### Useful resources
 
-- [resource 1](https://css-tricks.com/scale-svg/) - This arcticle helped me solve SVG scaling problem.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [How to Scale SVG](https://css-tricks.com/scale-svg/) - This arcticle helped me solve SVG scaling problem.
 
 ## Author
 
