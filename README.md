@@ -32,11 +32,11 @@ Users should be able to:
 
 ### Screenshots
 
-Desktop view:
-![Desktop layout](screenshot-desktop.png)
-Mobile view:
-![Mobile layout](screenshot-mobile.png)
-Incorrect email input:
+Desktop view:  
+![Desktop layout](screenshot-desktop.png)  
+Mobile view:  
+![Mobile layout](screenshot-mobile.png)  
+Incorrect email input:  
 ![Error message](screenshot-error.png)
 
 ### Links
